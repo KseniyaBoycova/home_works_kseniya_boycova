@@ -1,6 +1,10 @@
 package by.it.boycova.home_work3.calcs.simple;
 
-public class CalculatorWithMathCopy {
+import by.it.boycova.home_work3.calcs.api.ICalculator;
+
+public class CalculatorWithMathCopy implements ICalculator {
+
+
     public double addition(double x, double y, double a){
         double summ= x+y+a;
         return summ;

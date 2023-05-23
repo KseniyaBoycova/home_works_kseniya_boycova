@@ -1,15 +1,15 @@
 package by.it.boycova.home_work3.calcs.simple;
 
-public class CalculatorWithOperator {
+import by.it.boycova.home_work3.calcs.api.ICalculator;
+
+public class CalculatorWithOperator implements ICalculator {
 
     public double addition(double x, double y, double a){
-        double summ= x+y+a;
-        return summ;
+        return x+y+a;
     }
 
     public double subtraction(int x, int y){
-        double difference= x-y;
-        return  difference;
+        return x-y;
     }
 
     public double multiplication(int x, int y){
@@ -23,16 +23,9 @@ public class CalculatorWithOperator {
     }
 
     public double squaring (double x, int y){
-        int counter=2;
-        double square = 0.0;
-        double a=x;
-        while (counter<=y){
-            square=a*x;
-            a=square;
-            counter++;
-            if (counter>y){
-                break;
-            }
+        double square = x;
+        for (int i = 1; i < y; i++) {
+            square*=x;
         }
         return  square;
     }

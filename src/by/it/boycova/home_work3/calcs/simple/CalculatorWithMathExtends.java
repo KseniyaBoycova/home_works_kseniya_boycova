@@ -16,4 +16,24 @@ public class CalculatorWithMathExtends extends CalculatorWithOperator {
     public double getSquareRoot(double x) {
         return super.getSquareRoot(x);
     }
+
+    @Override
+    public double addition(double x, double y, double a) {
+        return super.addition(x, y, a);
+    }
+
+    @Override
+    public double subtraction(int x, int y) {
+        return super.subtraction(x, y);
+    }
+
+    @Override
+    public double multiplication(int x, int y) {
+        return super.multiplication(x, y);
+    }
+
+    @Override
+    public double division(double x, double y) {
+        return super.division(x, y);
+    }
 }
