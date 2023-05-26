@@ -26,6 +26,7 @@ public class DataContainer<T> {
 
     }
 
+
     public T get(int index) {
 
         if (index < 0 || index >= data.length) {
@@ -33,6 +34,7 @@ public class DataContainer<T> {
         }
         return data[index];
     }
+
 
     public T[] getItems(){
         return data;
@@ -54,6 +56,7 @@ public class DataContainer<T> {
         return true;
     }
 
+
    public boolean delete(T item){
        if (item == null) {
            return false;
@@ -69,6 +72,7 @@ public class DataContainer<T> {
        return true;
    }
 
+
     public void sort(Comparator<T> comparator) {
         for (int i = 0; i < data.length - 1; i++) {
             for (int j = 0; j < data.length - i - 1; j++) {
@@ -81,6 +85,7 @@ public class DataContainer<T> {
         }
 
     }
+
 
     @Override
     public String toString() {
