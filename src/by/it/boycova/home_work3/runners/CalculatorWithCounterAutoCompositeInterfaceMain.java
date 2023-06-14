@@ -1,8 +1,6 @@
 package by.it.boycova.home_work3.runners;
 
-import by.it.boycova.home_work3.calcs.additional.CalculatorWithCounterAutoAgregation;
 import by.it.boycova.home_work3.calcs.additional.CalculatorWithCounterAutoAgregationInterface;
-import by.it.boycova.home_work3.calcs.additional.CalculatorWithCounterAutoComposite;
 import by.it.boycova.home_work3.calcs.simple.CalculatorWithMathCopy;
 
 public class CalculatorWithCounterAutoCompositeInterfaceMain {
